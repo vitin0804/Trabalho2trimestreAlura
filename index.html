@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrator de Palavras-chave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Extrator de Palavras-chave</h1>
+            <div class="student-info">
+                <p class="student-name">Victor Henrique</p>
+                <p class="student-class">Turma: 2ºA</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="input-section">
+                <label for="entrada-de-texto" class="input-label">
+                    Digite ou cole seu texto aqui:
+                </label>
+                <textarea 
+                    id="entrada-de-texto" 
+                    class="text-input" 
+                    placeholder="Cole seu texto aqui para extrair as palavras-chave mais importantes..."
+                    rows="8"
+                ></textarea>
+                
+                <button id="botao-palavrachave" class="extract-button">
+                    <span class="button-text">Extrair Palavras-chave</span>
+                    <div class="button-loader"></div>
+                </button>
+            </div>
+
+            <div class="result-section">
+                <div class="result-header">
+                    <h2 class="result-title">Resultado</h2>
+                    <div class="result-icon">🔍</div>
+                </div>
+                <div id="resultado-palavrachave" class="result-content">
+                    Digite um texto e clique em "Extrair Palavras-chave" para ver o resultado.
+                </div>
+                <div class="keywords-container" id="keywords-container"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 - Desenvolvido por Victor Henrique</p>
+        </footer>
+    </div>
+
+    <div class="particles" id="particles"></div>
+    <script src="script.js"></script>
+</body>
+</html>
