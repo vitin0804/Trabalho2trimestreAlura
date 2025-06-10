@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extrator de Palavras-chave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="container">
+          <div class="student-info">
+            <div class="student-name">Victor Henrique</div>
+            <div class="student-class">2ºA</div>
+          </div>
+          
+          <h1 class="title">
+            <span class="title-icon">🔍</span>
+            Extrator de Palavras-chave
+          </h1>
+          <p class="subtitle">Descubra as palavras mais importantes do seu texto com precisão</p>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="input-section">
+            <label for="entrada-de-texto" class="input-label">
+              Cole ou digite seu texto aqui:
+            </label>
+            <textarea 
+              id="entrada-de-texto" 
+              class="text-input"
+              placeholder="Digite ou cole seu texto aqui para extrair as palavras-chave mais relevantes..."
+              rows="8"
+            ></textarea>
+            
+            <div class="button-container">
+              <button id="botao-palavrachave" class="btn btn-primary">
+                <span class="btn-text">Extrair Palavras-chave</span>
+                <span class="btn-icon">✨</span>
+              </button>
+              
+              <button id="botao-limpar" class="btn btn-secondary">
+                <span class="btn-text">Limpar Texto</span>
+                <span class="btn-icon">🗑️</span>
+              </button>
+              
+              <button id="botao-copiar" class="btn btn-accent">
+                <span class="btn-text">Copiar Resultado</span>
+                <span class="btn-icon">📋</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="result-section">
+            <div class="result-card">
+              <h2 class="result-title">Palavras-chave Encontradas</h2>
+              <div id="resultado-palavrachave" class="result-content">
+                <div style="text-align: center; color: var(--text-medium);">
+                  <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.6;">📝</div>
+                  <p style="font-size: 1.125rem;">Digite um texto acima e clique em "Extrair Palavras-chave" para ver os resultados.</p>
+                </div>
+              </div>
+              <div id="estatisticas" class="stats"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 Extrator de Palavras-chave. Desenvolvido por Victor Henrique - 2ºA</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
